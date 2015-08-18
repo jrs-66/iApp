@@ -1,0 +1,25 @@
+<ion-view view-title="Debug">
+  <ion-content>
+    <div ng-if="authorized">
+      <ion-list>
+        <ion-item class="item-remove-animate item-icon-left" href="#/tab/eventlog">
+            <i class="icon ion-ios-information"></i>Reported Beacons
+        </ion-item>
+      </ion-list>
+
+      <div class="padding">
+        <button ng-if="!debug" class="button button-block button-assertive" ng-click="debugMode()">
+          Spoof Beacon
+        </button>
+        <button ng-if="debug" class="button button-block button-assertive" ng-click="debugMode()">
+          Disable Beacon Spoof
+        </button>
+
+        <button class="button button-block button-assertive" ng-click="confirmDialog()">
+          Clear Local Storage
+        </button>
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>

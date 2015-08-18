@@ -1,0 +1,11 @@
+<ion-view view-title="Beacons">
+  <ion-content>
+    <ion-list>
+
+      <ion-item class="fx-fade-up" ng-repeat="beacon in beacons" type="item-text-wrap" ui-sref="tab.beaconsdetail({beacon: $index})">
+       {{ beacon.major }}-{{ beacon.minor }}
+      </ion-item>
+
+    </ion-list>
+  </ion-content>
+</ion-view>

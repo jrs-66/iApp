@@ -1,0 +1,26 @@
+<ion-view view-title="Event Log">
+    <ion-content>
+
+      <ion-refresher
+        pulling-text=""
+        on-refresh="doRefresh()">
+      </ion-refresher>
+
+      <ion-list>
+
+        <ion-item ng-if="beacons.length" class="item-remove-animate" ng-repeat="beacon in beacons" type="item-text-wrap">
+          Major - Minor - {{ beacon.major }}-{{ beacon.minor }}<br />
+          RSSI - {{ beacon.rssi}}<br />
+          proximity - {{ beacon.proximity}}<br />
+          accuracy - {{ beacon.accuracy }}<br />
+          uuid - {{ beacon.uuid }}
+        </ion-item>
+
+        <ion-item ng-if="!beacons.length" class="item-remove-animate" type="item-text-wrap">
+          No Beacons have been found!
+        </ion-item>
+
+      </ion-list>
+
+    </ion-content>
+</ion-view>

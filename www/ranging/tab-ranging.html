@@ -1,0 +1,15 @@
+<ion-view view-title="Display">
+    <ion-content>
+      <div ng-if="closestForage">
+        <div ng-if="closestForage.url" js-change="closestForage.url" class="animated">
+          <img ng-src="{{ closestForage.url }}" style="width:100%" />
+        </div>
+        <div ng-if="!closestForage.url">
+          Assign an image.
+        </div>
+      </div>
+      <div ng-if="!closestForage">
+        There are no beacons detected!
+      </div>
+    </ion-content>
+</ion-view>

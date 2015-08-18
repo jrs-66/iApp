@@ -1,0 +1,18 @@
+<ion-view view-title="Settings">
+  <ion-content>
+    <div ng-if="authorized">
+      <ion-list>
+        <ion-item class="item-remove-animate item-icon-left" ui-sref="tab.beacons">
+          <i class="icon ion-bluetooth"></i>Configure Beacons
+        </ion-item>
+        <ion-item class="item-remove-animate item-icon-left" ui-sref="tab.players">
+          <i class="icon ion-android-arrow-dropright-circle"></i>Players
+        </ion-item>
+        <ion-item class="item-remove-animate item-icon-left" ui-sref="tab.settingsdebug">
+            <i class="icon ion-ios-information"></i>Debugging
+        </ion-item>
+      </ion-list>
+
+    </div>
+  </ion-content>
+</ion-view>

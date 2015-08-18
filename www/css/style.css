@@ -1,0 +1,16 @@
+.bounceIn.ng-hide-add {
+  opacity: 1.0;
+  display: block !important;
+  transition: opacity 1s;
+}
+
+.bounceIn.ng-hide-add-active {
+  opacity: 0;
+}
+
+.button{
+    font-family: 'Comic Neue', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    line-height: 1.5;
+}

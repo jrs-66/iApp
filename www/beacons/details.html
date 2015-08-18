@@ -1,0 +1,23 @@
+<ion-view view-title="{{ beaconName() }}">
+
+  <ion-content class="padding">
+
+    <button class="button button-block button-positive" ng-click="getPhoto()">
+      Take Photo
+    </button>
+    <button class="button button-block button-positive" ng-click="getPhoto('LIBRARY')">
+      Select from Library
+    </button>
+
+    <div ng-if="test" class="fx-zoom-normal fx-speed-510">
+      <ion-list style="text-align:center">
+        <ion-item can-swipe="true" can-delete="true" item-type="item-icon-right">
+          <img ng-src="{{ test.url }}" style="margin-left:30px;width:170px"></img>
+          <ion-option-button class="button-assertive icon ion-trash-a" ng-click="deletePic()"></ion-option-button>
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-content>
+
+
+</ion-view>

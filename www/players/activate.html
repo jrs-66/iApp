@@ -1,0 +1,24 @@
+<ion-view title="Activate Player">
+
+  <ion-content>
+      <form novalidate ng-submit="addPlayer(player)">
+
+          <label class="item item-input">
+            <span class="input-label">Name</span>
+            <input type="text" ng-model="player.name">
+          </label>
+          <label class="item item-input">
+            <span class="input-label">Activation Code</span>
+            <input type="text" ng-model="player.code">
+          </label>
+
+          <div class="padding">
+            <button type="submit" class="button button-block button-positive activated">
+              Activate
+            </button>
+          </div>
+
+      </form>
+  </ion-content>
+
+</ion-view>

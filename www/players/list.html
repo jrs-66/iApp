@@ -1,0 +1,19 @@
+<ion-view title="Players">
+
+  <ion-nav-buttons side="right">
+    <button class="button button-clear button-positive" ui-sref="tab.playeractivate">
+      <i class="icon ion-ios-plus-empty"></i>
+    </button>
+  </ion-nav-buttons>
+
+
+  <ion-content>
+    <ion-list>
+      <ion-item can-swipe="true" can-delete="true" class="fx-fade-up" ng-repeat="player in players" type="item-text-wrap" ui-sref="tab.playerdetails({player: player._id})">
+       {{ player.name }}
+       <ion-option-button class="button-assertive icon ion-trash-a" ng-click="remove(player)"></ion-option-button>
+      </ion-item>
+
+    </ion-list>
+  </ion-content>
+</ion-view>
